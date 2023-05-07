@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="feature1 <= 0.053\nsamples = 45\nvalue = [44, 31]\nclass = 0", fillcolor="#f7dac4"] ;
+1 [label="feature1 <= -0.37\nsamples = 19\nvalue = [3, 23]\nclass = 1", fillcolor="#53aae8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="feature0 <= -0.267\nsamples = 7\nvalue = [3, 10]\nclass = 1", fillcolor="#74baed"] ;
+1 -> 2 ;
+3 [label="samples = 1\nvalue = [3, 0]\nclass = 0", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="samples = 6\nvalue = [0, 10]\nclass = 1", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="samples = 12\nvalue = [0, 13]\nclass = 1", fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label="feature0 <= 1.145\nsamples = 26\nvalue = [41, 8]\nclass = 0", fillcolor="#ea9a60"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="feature1 <= 0.206\nsamples = 21\nvalue = [41, 1]\nclass = 0", fillcolor="#e6843e"] ;
+6 -> 7 ;
+8 [label="feature1 <= 0.165\nsamples = 4\nvalue = [8, 1]\nclass = 0", fillcolor="#e89152"] ;
+7 -> 8 ;
+9 [label="samples = 3\nvalue = [8, 0]\nclass = 0", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="samples = 1\nvalue = [0, 1]\nclass = 1", fillcolor="#399de5"] ;
+8 -> 10 ;
+11 [label="samples = 17\nvalue = [33, 0]\nclass = 0", fillcolor="#e58139"] ;
+7 -> 11 ;
+12 [label="samples = 5\nvalue = [0, 7]\nclass = 1", fillcolor="#399de5"] ;
+6 -> 12 ;
+}
