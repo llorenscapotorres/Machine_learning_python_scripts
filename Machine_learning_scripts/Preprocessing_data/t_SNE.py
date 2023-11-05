@@ -46,3 +46,7 @@ for i in range(len(digits.data)):
 plt.xlabel("t-SNE feature 0")
 plt.ylabel("t-SNE feature 1")
 plt.show()
+
+import pandas as pd
+
+print(pd.__version__)

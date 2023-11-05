@@ -73,3 +73,7 @@ plt.scatter(X[cond1, 0], X[cond1, 1], color=colors[1], s=30, marker="^",label='T
 plt.xlabel('Feature 0')
 plt.ylabel('Feature 1')
 plt.show()
+
+import pandas as pd
+
+print(pd.__version__)
